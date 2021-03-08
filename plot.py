@@ -32,20 +32,20 @@ B5 = 15.5 * A - 16.8 * A ** (2 / 3) - 0.72 * Z * (Z - 1) / A ** (1 / 3) - (23 * 
 fig = go.Figure()
 fig.add_trace(go.Scatter(x=A, y=B1 / A,
                          mode='lines',
-                         name='B/A v'
+                         name='B.E/A v'
                          ))
 fig.add_trace(go.Scatter(x=A, y=B2 / A,
                          mode='lines',
-                         name='B/A v+s'))
+                         name='B.E/A (v+s)'))
 fig.add_trace(go.Scatter(x=A, y=B3 / A,
                          mode='lines',
-                         name='B/A v+s+c'))
+                         name='B.E/A (v+s+c)'))
 fig.add_trace(go.Scatter(x=A, y=B4 / A,
                          mode='lines',
-                         name='B/A v+s+c+a'))
+                         name='B.E/A (v+s+c+a)'))
 fig.add_trace(go.Scatter(x=A, y=B5 / A,
                          mode='lines',
-                         name='B/A v+s+c+a+p'))
+                         name='B.E/A (v+s+c+a+p)'))
 fig.update_layout(title='PLOT BE/A vs A',
                   title_font_size=30,
                   xaxis_title='A',
